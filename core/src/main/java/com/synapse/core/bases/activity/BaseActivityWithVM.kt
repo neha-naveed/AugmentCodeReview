@@ -8,7 +8,10 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseActivityWithVM<VB : ViewBinding, VM : ViewModel> : AppCompatActivity() {
 
     private var _binding: VB? = null
-    protected val binding get() = _binding!!
+    protected val binding: VB
+        get() = _binding ?: throw IllegalStateException(
+            "Binding cannot be accessed before onCreate() or after onDestroy()"
+        )
 
     protected abstract val viewModel: VM
 
