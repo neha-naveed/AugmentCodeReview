@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Synapse</string>
+    <string name="splash_tagline">AI-First Knowledge Companion</string>
+    <string name="splash_background_desc">Splash screen background</string>
+    <string name="app_logo_desc">Synapse app logo</string>
+</resources>
+
